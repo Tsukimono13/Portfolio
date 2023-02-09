@@ -1,0 +1,26 @@
+.workContainer{
+    width: 400px;
+    background-color: rgba(194, 30, 137, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    background-color: rgba(236, 224, 214, 0.86);
+
+}
+.href {
+    text-decoration: none;
+}
+.h3{
+    background-color: #e7dede;
+}
+.description{
+    background-color: rgba(255, 255, 255, 0.73);
+}

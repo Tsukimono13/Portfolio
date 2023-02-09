@@ -1,0 +1,15 @@
+.distant{
+    height: 50vh;
+    background-color: rgba(229, 176, 161, 0.71);
+}
+.workContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.work{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,15 @@
+.footerBlock{
+    height: 50vh;
+    background-color: rgba(208, 184, 220, 0.73);
+}
+.footerContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

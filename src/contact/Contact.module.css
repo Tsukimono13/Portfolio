@@ -1,0 +1,15 @@
+.contactBlock{
+    height: 100vh;
+    background-color: rgba(46, 173, 168, 0.44);
+}
+.contactContainer{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.contact{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

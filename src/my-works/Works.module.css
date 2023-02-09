@@ -1,0 +1,18 @@
+.worksBlock{
+    min-height: 100vh;
+    background-color: palegoldenrod;
+}
+.worksContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title {
+    background-color: rgba(187, 42, 42, 0.47);
+}
+.works{
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
