@@ -5,11 +5,12 @@
 .footerContainer{
     flex-direction: row;
     justify-content: flex-start;
+
 }
 .footer{
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+
 }

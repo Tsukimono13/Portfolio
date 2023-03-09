@@ -1,0 +1,25 @@
+
+.title {
+    margin: 0 0 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1d1d1d;
+    letter-spacing: -.03em;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.2em;
+    position: relative;
+}
+
+.title h2{
+ margin: 0;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    background-color: #1d1d1d;
+    width: 65px;
+    height: 1px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

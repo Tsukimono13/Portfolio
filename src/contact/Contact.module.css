@@ -1,6 +1,6 @@
 .contactBlock{
-    height: 100vh;
-    background-color: rgba(46, 173, 168, 0.44);
+    height: 80vh;
+    background-color: #f4f2ec;
 }
 .contactContainer{
     flex-direction: row;

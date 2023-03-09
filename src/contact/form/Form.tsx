@@ -7,11 +7,11 @@ const Form = () => {
         <div className={style.form}>
             <h2 className={style.title}>Contacts</h2>
             <form className={style.formContainer}>
-                <input/>
-                <input/>
+                <input type={"text"}/>
+                <input type={"text"}/>
                 <textarea></textarea>
+           <button type={"submit"}>Send</button>
             </form>
-            <div><button>Send</button></div>
         </div>
     );
 };
