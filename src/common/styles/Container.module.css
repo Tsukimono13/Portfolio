@@ -6,6 +6,6 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; /*media zapros center*/
+    justify-content: space-evenly; /*media zapros center*/
     flex-wrap: wrap;
 }

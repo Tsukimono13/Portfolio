@@ -1,6 +1,6 @@
 .info {
     width: 100%;
-    background-color: rgba(245, 237, 237, 0.81);
+    background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
     align-items: center;

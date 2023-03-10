@@ -1,6 +1,6 @@
 .footerBlock{
     height: 50vh;
-    background-color: rgba(208, 184, 220, 0.73);
+    background-color: #1c1c1c;
 }
 .footerContainer{
     flex-direction: row;
