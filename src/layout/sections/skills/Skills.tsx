@@ -33,4 +33,8 @@ const MainDiv = styled.div`
 const SkillContainer = styled.div`
   width: 756px;
   margin-bottom: 136px;
+  
+  @media ${theme.media.tablet}{
+    width: 375px;
+  }
 `

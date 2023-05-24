@@ -17,12 +17,12 @@ const stackIcons = [{icon: react, title: 'React'}, {icon: next, title: 'Next.js'
 
 const SkillCart = () => {
     return (
-        <Box>
+        <ContainerForIcons>
             {stackIcons.map((i, index) => <IconWrapper key={index}>
                 <StyledIcon src={i.icon}/>
                 <StyledDescription>{i.title}</StyledDescription>
             </IconWrapper>)}
-        </Box>
+        </ContainerForIcons>
     );
 };
 
@@ -39,17 +39,22 @@ color:#FFFFFF;
 const StyledIcon = styled.img`
   width: 100px;
   height: 100px;
+  
+  @media ${theme.media.tablet}{
+    width: 80px;
+    height: 80px;
+  }
 `
 const IconWrapper = styled.div`
 `
-const Box = styled.div`
-display: flex;
+const ContainerForIcons = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 64px;
   flex-wrap: wrap;
- 
-  @media ${theme.media.mobile}{
 
+  @media ${theme.media.mobile} {
+    gap: 32px;
   }
 `

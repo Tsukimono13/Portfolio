@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import image from 'assets/image/Project.png';
 import arrow from 'assets/icons/arrow.svg';
+import {theme} from "styles/Theme.styled";
 
 type WorkPropsType = {
     title: string
@@ -16,12 +17,12 @@ const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
                     <LiStyled>
                         <Img src={image}/>
                         <ContentContainer>
-                            <div>
+                            <TextBlock>
                                 <Title>{title}<IconArrowStyled src={arrow}/></Title>
                                 <TagsStyled>
                                 {tags.map((tag, index) => <Parag key={index}>{tag}</Parag>)}
                                 </TagsStyled>
-                            </div>
+                            </TextBlock>
                         </ContentContainer>
                     </LiStyled>
                 </UlStyled>
@@ -31,11 +32,16 @@ const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
 
 export default Work;
 
+const TextBlock = styled.div`
+  
+`
+
 const TagsStyled = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
 `
+
 const UlStyled = styled.ul`
   list-style:none;
   width: 100%;
@@ -54,6 +60,8 @@ const LiStyled = styled.li`
     overflow: hidden;
     top: 0;
     left: 0;
+  }
+    
 `
 const Title = styled.h3`
   color: #000000;
@@ -64,6 +72,7 @@ const Title = styled.h3`
   padding-bottom: 12px;
   text-align: left;
   margin-bottom: 52px;
+ 
 `
 const Parag = styled.p`
   font-size: 16px;
@@ -101,11 +110,21 @@ const ContentContainer = styled.div`
   align-items: flex-end;
 
   :hover {
-    opacity: 1;
+    opacity: 2;
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
+  }
+  @media ${theme.media.tablet}{
+    opacity: 1;
+    transition: unset;
+    backdrop-filter: unset;
+    
+    :hover {
+      display: none;
+    }
+    
   }
 `
 
@@ -115,4 +134,12 @@ const Img = styled.img`
   height: 484px;
   border: 8px solid #F29CEF;
   border-radius: 32px;
+  
+  @media ${theme.media.tablet}{
+    width: 375px;
+    height: 184px;
+    border-radius: 0;
+    border: 4px solid #F29CEF;
+    transition: none;
+  }
 `
