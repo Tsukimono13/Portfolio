@@ -47,4 +47,8 @@ const WorkCards = styled.div`
   gap: 48px;
   flex-direction: column;
   margin-bottom: 128px;
+  
+  @media ${theme.media.tablet}{
+    gap: 0;
+  }
 `

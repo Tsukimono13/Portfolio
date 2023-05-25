@@ -36,8 +36,8 @@ const Link = styled.a`
   text-decoration: none;
 `
 const CartWork = styled.div`
-  height: 295px;
-  min-width: 375px;
+  height: 335px;
+  min-width: 405px;
 `
 const Title = styled.h3`
   font-size: 20px;
@@ -58,10 +58,10 @@ const Tags = styled.p`
   padding: 7px 16px 5px;
 `
 const ProjectImg = styled.img`
-  height: 184px;
-  min-width: 375px;
+  height: 214px;
+  min-width: 405px;
   border: 4px solid #F29CEF;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 `
 const IconArrowStyled = styled.img`
   width: 28px;
