@@ -1,40 +1,24 @@
 import React from 'react';
-import styled from "styled-components";
-import Title from "components/title/Title";
-import {theme} from "styles/Theme.styled";
 import SkillCart from "components/skill/SkillCart";
 import {Container} from "components/Container";
 import {Wrapper} from "components/FlexWrapper";
+import {S} from "layout/sections/skills/Skills_Styles"
+import {Title} from "components/title/Title";
 
 
-const Skills = () => {
+export const Skills: React.FC = () => {
     return (
-        <MainDiv>
+        <S.Main>
             <Container>
                 <Wrapper justify={'center'} align={'center'} direction={'column'}>
                     <div>
                         <Title title={'Stack'} color={'rgba(242, 156, 239, 1)'}/>
                     </div>
-                    <SkillContainer>
+                    <S.SkillContainer>
                         <SkillCart/>
-                    </SkillContainer>
+                    </S.SkillContainer>
                 </Wrapper>
             </Container>
-        </MainDiv>
+        </S.Main>
     );
 };
-
-export default Skills;
-
-const MainDiv = styled.div`
-  background: ${theme.colors.secondary};
-  min-height: 70vh;
-`
-const SkillContainer = styled.div`
-  width: 756px;
-  margin-bottom: 136px;
-  
-  @media ${theme.media.tablet}{
-    width: 375px;
-  }
-`

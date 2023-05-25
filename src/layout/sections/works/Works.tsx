@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import Work from "components/work/Work";
-import Title from "components/title/Title";
 import {theme} from "styles/Theme.styled";
 import {Container} from "components/Container";
+import {Title} from "components/title/Title";
+import {Work} from "components/work/Work";
 
 
-const Works = () => {
+export const Works: React.FC = () => {
     const tags = ['react', 'redux', 'css']
 
     return (
@@ -23,7 +23,6 @@ const Works = () => {
     );
 };
 
-export default Works;
 
 const MainDiv = styled.div`
   min-height: 100vh;

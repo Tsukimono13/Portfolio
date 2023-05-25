@@ -1,32 +1,33 @@
 import React from 'react';
-import {Menu} from "components/menu/Menu";
-import styled from "styled-components";
 import Logo from "components/logo/Logo";
-import {theme} from "styles/Theme.styled";
-import {HeaderMenu} from "layout/header/headerMenu/HeaderMenu";
 import {Container} from "components/Container";
 import {Wrapper} from "components/FlexWrapper";
-import {MobileMenu} from "layout/header/mobileMenu/MobileMenu";
+import {MobileMenu} from "layout/header/headerMenu/mobileMenu/MobileMenu";
+import {S} from "layout/header/Header_Styles"
+import {DesktopMenu} from "layout/header/headerMenu/desktopMenu/DesktopMenu";
 
-export const Header = () => {
+
+export const Header: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
-        <StyledHeader>
+        <S.StyledHeader>
             <Container>
                 <Wrapper justify={"space-between"} align={"center"}>
                     <Logo/>
-                    <Menu/>
-                  {/*<MobileMenu/>*/}
+                    {width > breakpoint ? <DesktopMenu/> : <MobileMenu/>}
                 </Wrapper>
             </Container>
-        </StyledHeader>
+        </S.StyledHeader>
     );
 };
 
-const StyledHeader = styled.header`
-  background: ${theme.colors.primary};
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 99999;
-`
+

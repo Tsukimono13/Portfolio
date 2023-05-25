@@ -1,25 +1,6 @@
-import React from 'react';
-import styled from "styled-components";
-import Title from "components/title/Title";
 import {theme} from "styles/Theme.styled";
-import {Container} from "components/Container";
-import {Wrapper} from "components/FlexWrapper";
+import styled from "styled-components";
 
-const Contacts = () => {
-    return (
-        <MainDiv>
-            <Container>
-                <Wrapper justify={'center'} align={'center'} direction={'column'}>
-                    <Title title={'Contact'} color={`${theme.colors.primary}`}/>
-                    <WelcomeText>Write me if you have questions, suggestions or just want to chat :)</WelcomeText>
-                    <ButtonStyled>Send message</ButtonStyled>
-                </Wrapper>
-            </Container>
-        </MainDiv>
-    );
-};
-
-export default Contacts;
 const MainDiv = styled.div`
   min-height: 60vh;
   background: ${theme.colors.secondary};
@@ -32,8 +13,8 @@ const WelcomeText = styled.p`
   text-align: center;
   color: rgba(255, 255, 255, 1);
   width: 590px;
-  
-  @media ${theme.media.mobile}{
+
+  @media ${theme.media.mobile} {
     font-size: 16px;
     line-height: 22px;
     width: 304px;
@@ -69,3 +50,4 @@ const ButtonStyled = styled.button`
     padding: 12px 77px;
   }
 `
+export const S = {MainDiv, WelcomeText, ButtonStyled}

@@ -10,12 +10,12 @@ type WorkPropsType = {
     img: string
 }
 
-const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
+export const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
     return (
             <Link href={''}>
                 <UlStyled>
                     <LiStyled>
-                        <Img src={image}/>
+                        <ImgProject src={image}/>
                         <ContentContainer>
                             <TextBlock>
                                 <Title>{title}<IconArrowStyled src={arrow}/></Title>
@@ -30,10 +30,8 @@ const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
     );
 };
 
-export default Work;
 
 const TextBlock = styled.div`
-  
 `
 
 const TagsStyled = styled.div`
@@ -61,7 +59,6 @@ const LiStyled = styled.li`
     top: 0;
     left: 0;
   }
-    
 `
 const Title = styled.h3`
   color: #000000;
@@ -72,7 +69,6 @@ const Title = styled.h3`
   padding-bottom: 12px;
   text-align: left;
   margin-bottom: 52px;
- 
 `
 const Parag = styled.p`
   font-size: 16px;
@@ -116,19 +112,16 @@ const ContentContainer = styled.div`
     top: 0;
     left: 0;
   }
-  @media ${theme.media.tablet}{
+
+  @media ${theme.media.tablet} {
     opacity: 1;
-    transition: unset;
-    backdrop-filter: unset;
-    
     :hover {
       display: none;
     }
-    
+
   }
 `
-
-const Img = styled.img`
+const ImgProject = styled.img`
   transition: all 0.2s linear;
   width: 996px;
   height: 484px;
