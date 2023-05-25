@@ -29,6 +29,8 @@ export const Works: React.FC = () => {
                         : <CartWorkMobile title={'Title'} tags={tags} img={''}/>}
                     {width > breakpoint ? <CartWorkDesktop title={'Title diact rgkgkg'} img={''} tags={tags}/>
                         : <CartWorkMobile title={'Title diact rgkgkg'} tags={tags} img={''}/>}
+                    {width > breakpoint ? <CartWorkDesktop title={'Title diact rgkgkg'} img={''} tags={tags}/>
+                        : <CartWorkMobile title={'Title diact rgkgkg'} tags={tags} img={''}/>}
                 </WorkCards>
             </Container>
         </MainDiv>
@@ -46,7 +48,7 @@ const WorkCards = styled.div`
   align-items: center;
   gap: 48px;
   flex-direction: column;
-  margin-bottom: 128px;
+ padding-bottom: 128px;
   
   @media ${theme.media.tablet}{
     gap: 0;
