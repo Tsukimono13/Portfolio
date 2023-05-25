@@ -37,7 +37,7 @@ const Link = styled.a`
 `
 const CartWork = styled.div`
   height: 335px;
-  min-width: 411px;
+  min-width: 415px;
 `
 const Title = styled.h3`
   font-size: 20px;
@@ -59,7 +59,7 @@ const Tags = styled.p`
 `
 const ProjectImg = styled.img`
   height: 214px;
-  min-width: 411px;
+  min-width: 415px;
   border: 4px solid #F29CEF;
   margin-bottom: 16px;
 `
