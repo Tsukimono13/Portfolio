@@ -1,29 +1,6 @@
-import React from 'react';
 import styled from "styled-components";
-import arrow from "assets/icons/black_arrow.svg";
 import {theme} from "styles/Theme.styled";
-import image from 'assets/image/Project.png';
 
-type WorkPropsType = {
-    title: string
-    tags: string[]
-    img: string
-}
-export const CartWorkMobile: React.FC<WorkPropsType> = ({img, title, tags}) => {
-    return (
-        <Link href={''}>
-            <CartWork>
-                <ProjectImg src={image}/>
-                <ContextBlock>
-                    <Title>{title}<IconArrowStyled src={arrow}/></Title>
-                    <TagsStyled>
-                        {tags.map((tag, index) => <Tags key={index}>{tag}</Tags>)}
-                    </TagsStyled>
-                </ContextBlock>
-            </CartWork>
-        </Link>
-    );
-};
 const ContextBlock = styled.div`
   margin-left: 36px;
 `
@@ -33,7 +10,6 @@ const TagsStyled = styled.div`
   gap: 10px;
 `
 const Link = styled.a`
-  text-decoration: none;
 `
 const CartWork = styled.div`
   height: 335px;
@@ -68,3 +44,4 @@ const IconArrowStyled = styled.img`
   height: 18px;
   margin-left: 8px;
 `
+export const S = {IconArrowStyled, ProjectImg, Tags, Title, CartWork, Link, TagsStyled, ContextBlock}

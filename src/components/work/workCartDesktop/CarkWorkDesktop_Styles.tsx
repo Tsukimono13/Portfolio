@@ -1,37 +1,4 @@
-import React from 'react';
 import styled from "styled-components";
-import image from 'assets/image/Project.png';
-import arrow from 'assets/icons/arrow.svg';
-
-type WorkPropsType = {
-    title: string
-    tags: string[]
-    img: string
-}
-
-export const CartWorkDesktop: React.FC<WorkPropsType> = ({img, title,tags}) => {
-    return (
-            <Link href={''}>
-                <UlStyled>
-                    <LiStyled>
-                        <ImgProject src={image}/>
-                        <ContentContainer>
-                            <TextBlock>
-                                <Title>{title}<IconArrowStyled src={arrow}/></Title>
-                                <TagsStyled>
-                                {tags.map((tag, index) => <Parag key={index}>{tag}</Parag>)}
-                                </TagsStyled>
-                            </TextBlock>
-                        </ContentContainer>
-                    </LiStyled>
-                </UlStyled>
-            </Link>
-    );
-};
-
-
-const TextBlock = styled.div`
-`
 
 const TagsStyled = styled.div`
   display: flex;
@@ -40,7 +7,7 @@ const TagsStyled = styled.div`
 `
 
 const UlStyled = styled.ul`
-  list-style:none;
+  list-style: none;
   width: 100%;
   text-align: center;
   padding: 0;
@@ -69,7 +36,7 @@ const Title = styled.h3`
   text-align: left;
   margin-bottom: 52px;
 `
-const Parag = styled.p`
+const Description = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -78,9 +45,7 @@ const Parag = styled.p`
   border-radius: 40px;
   padding: 12px 24px 8px;
 `
-const Link = styled.a`
-  text-decoration: none;
-`
+
 const IconArrowStyled = styled.img`
   width: 91px;
   height: 32px;
@@ -119,3 +84,5 @@ const ImgProject = styled.img`
   border: 8px solid #F29CEF;
   border-radius: 32px;
 `
+
+export const S = {TagsStyled, ImgProject, ContentContainer, IconArrowStyled, UlStyled, Description, Title, LiStyled}

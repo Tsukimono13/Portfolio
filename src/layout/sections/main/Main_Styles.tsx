@@ -24,7 +24,7 @@ const AboutMe = styled.h1`
     text-align: left;
     width: 304px;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
 `
 const MyPhoto = styled.img`
@@ -38,8 +38,7 @@ const MyPhoto = styled.img`
   @media ${theme.media.tablet} {
     width: 316px;
     height: 303px;
-    margin-top: 64px;
-    margin-bottom: 50px;
+    margin-top: 32px;
   }
 `
 
@@ -47,6 +46,7 @@ const NameImg = styled.img`
   @media ${theme.media.tablet} {
     width: 304px;
     height: 148px;
+    padding-right: 40px;
   }
 `
 

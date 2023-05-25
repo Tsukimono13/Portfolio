@@ -14,8 +14,8 @@ const Logo = () => {
 export default Logo;
 
 const Link = styled.a`
- @media ${theme.media.mobile}{
-   margin-top: 52px;
+ @media ${theme.media.tablet}{
+   margin-top: 26px;
    margin-left: 36px;
  }
 `
