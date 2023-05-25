@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
   right: 0;
   left: 0;
   z-index: 99999;
+  
 `
 
 export const S = {StyledHeader}

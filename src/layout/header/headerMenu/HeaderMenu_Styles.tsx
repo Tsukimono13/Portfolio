@@ -15,8 +15,8 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 4px;
     background: ${theme.colors.secondary};
     position: absolute;
-    left: 40px;
-    bottom: 50px;
+    left: 22px;
+    bottom: -5px;
     border-radius: 4px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`

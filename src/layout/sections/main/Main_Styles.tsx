@@ -6,7 +6,7 @@ const MainDiv = styled.div`
   background: ${theme.colors.primary};
   display: flex;
   @media ${theme.media.mobile} {
-    margin-top: 0;
+    margin-top: 64px;
   }
 `
 
