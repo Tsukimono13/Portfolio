@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import image from 'assets/image/Project.png';
 import arrow from 'assets/icons/arrow.svg';
-import {theme} from "styles/Theme.styled";
 
 type WorkPropsType = {
     title: string
@@ -10,7 +9,7 @@ type WorkPropsType = {
     img: string
 }
 
-export const Work: React.FC<WorkPropsType> = ({img, title,tags}) => {
+export const CartWorkDesktop: React.FC<WorkPropsType> = ({img, title,tags}) => {
     return (
             <Link href={''}>
                 <UlStyled>
@@ -112,14 +111,6 @@ const ContentContainer = styled.div`
     top: 0;
     left: 0;
   }
-
-  @media ${theme.media.tablet} {
-    opacity: 1;
-    :hover {
-      display: none;
-    }
-
-  }
 `
 const ImgProject = styled.img`
   transition: all 0.2s linear;
@@ -127,12 +118,4 @@ const ImgProject = styled.img`
   height: 484px;
   border: 8px solid #F29CEF;
   border-radius: 32px;
-  
-  @media ${theme.media.tablet}{
-    width: 375px;
-    height: 184px;
-    border-radius: 0;
-    border: 4px solid #F29CEF;
-    transition: none;
-  }
 `

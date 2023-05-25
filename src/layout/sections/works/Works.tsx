@@ -3,20 +3,32 @@ import styled from "styled-components";
 import {theme} from "styles/Theme.styled";
 import {Container} from "components/Container";
 import {Title} from "components/title/Title";
-import {Work} from "components/work/Work";
+import {CartWorkDesktop} from "components/work/CartWorkDesktop";
+import {CartWorkMobile} from "components/work/CartWorkMobile";
 
 
 export const Works: React.FC = () => {
     const tags = ['react', 'redux', 'css']
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
 
     return (
         <MainDiv>
             <Container>
                 <Title title={'Projects'} color={`${theme.colors.text}`}/>
                 <WorkCards>
-                    <Work title={'Title'} img={''} tags={tags}/>
-                    <Work title={'Hello how are you'} img={''} tags={tags}/>
-                    <Work title={'React redux hgjgjg gjgjjg'} img={''} tags={tags}/>
+                    {width > breakpoint ? <CartWorkDesktop title={'Title'} img={''} tags={tags}/>
+                        : <CartWorkMobile title={'Title'} tags={tags} img={''}/>}
+                    {width > breakpoint ? <CartWorkDesktop title={'Title diact rgkgkg'} img={''} tags={tags}/>
+                        : <CartWorkMobile title={'Title diact rgkgkg'} tags={tags} img={''}/>}
                 </WorkCards>
             </Container>
         </MainDiv>
