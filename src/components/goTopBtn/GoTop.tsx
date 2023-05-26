@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import goTop from 'assets/icons/goTotop.svg'
 import styled from "styled-components";
 import {animateScroll as scroll} from "react-scroll";
+import { theme } from 'styles/Theme.styled';
 
 export const GoTop = () => {
     const [showBtn, setShowBtn] = useState(false)
@@ -22,7 +23,7 @@ export const GoTop = () => {
                 <ButtonStyle onClick={() => {
                     scroll.scrollToTop()
                 }}>
-                    <img src={goTop}/>
+                    <Icon src={goTop}/>
                 </ButtonStyle>
             )}
         </>
@@ -34,4 +35,14 @@ const ButtonStyle = styled.div`
   bottom: 115px;
   right: 44px;
   cursor: pointer;
+  
+  @media ${theme.media.tablet}{
+    right: 30px;
+  }
+`
+const Icon = styled.img`
+  @media ${theme.media.tablet}{
+    height: 54px;
+    width: 28px;
+  }
 `
