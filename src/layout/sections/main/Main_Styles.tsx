@@ -1,12 +1,14 @@
 import {theme} from "styles/Theme.styled";
 import styled from "styled-components";
 
+
 const MainDiv = styled.div`
   min-height: 100vh;
   background: ${theme.colors.primary};
   display: flex;
   @media ${theme.media.mobile} {
     margin-top: 64px;
+    margin-bottom: 50px;
   }
 `
 
@@ -23,7 +25,6 @@ const AboutMe = styled.h1`
     line-height: 22px;
     text-align: left;
     width: 304px;
-    margin-top: 50px;
     margin-bottom: 100px;
   }
 `
@@ -52,10 +53,11 @@ const NameImg = styled.img`
 
 const Shadow = styled.img`
   position: absolute;
-  right: 70px;
-  top: 190px;
+  right: -85px;
+  top: 140px;
   width: 769px;
   height: 638px;
+ 
 
   @media screen and (max-width: 1120px) {
     display: none;

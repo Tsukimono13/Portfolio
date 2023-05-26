@@ -8,7 +8,7 @@ import {Title} from "components/title/Title";
 
 export const Skills: React.FC = () => {
     return (
-        <S.Main>
+        <S.Main id={'skills'}>
             <Container>
                 <Wrapper justify={'center'} align={'center'} direction={'column'}>
                     <div>

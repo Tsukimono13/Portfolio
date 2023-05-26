@@ -7,7 +7,7 @@ import { S } from './Contact_Styles';
 
 export const Contact: React.FC = () => {
     return (
-        <S.MainDiv>
+        <S.MainDiv id={'contact'}>
             <Container>
                 <Wrapper justify={'center'} align={'center'} direction={'column'}>
                     <Title title={'Contact'} color={`${theme.colors.primary}`}/>

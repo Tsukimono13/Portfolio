@@ -5,11 +5,13 @@ import name from 'assets/image/name.svg'
 import {Wrapper} from "components/FlexWrapper";
 import {Container} from "components/Container";
 import {S} from "layout/sections/main/Main_Styles"
+import Tilt from 'react-parallax-tilt';
+
 
 
 export const Main: React.FC = () => {
     return (
-        <S.MainDiv>
+        <S.MainDiv id={'main'}>
             <Container>
                 <Wrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
                     <div>
@@ -18,8 +20,17 @@ export const Main: React.FC = () => {
                             programming and everything connected with it. Will be glad to code your project!</S.AboutMe>
                     </div>
                     <div>
-                        <S.MyPhoto src={photo} alt="Photo"/>
-                        <S.Shadow src={shadow} alt="Photo"/>
+                        <Tilt className="tilt-img"
+                              tiltMaxAngleX={35}
+                              tiltMaxAngleY={35}
+                              perspective={900}
+                              scale={1.1}
+                              transitionSpeed={2000}
+                              gyroscope={true}>
+
+                            <S.MyPhoto src={photo} alt="Photo" />
+                            <S.Shadow src={shadow} alt="Photo"/>
+                        </Tilt>
                     </div>
                 </Wrapper>
             </Container>

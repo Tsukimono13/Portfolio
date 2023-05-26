@@ -21,7 +21,7 @@ export const Works: React.FC = () => {
     }, []);
 
     return (
-        <S.MainDiv>
+        <S.MainDiv id={'works'}>
             <Container>
                 <Title title={'Projects'} color={`${theme.colors.text}`}/>
                 <S.WorkCards>
