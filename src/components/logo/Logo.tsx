@@ -14,8 +14,9 @@ const Logo = () => {
 export default Logo;
 
 const Link = styled.a`
+  
  @media ${theme.media.tablet}{
-   margin-top: 26px;
+   margin-top: 36px;
    margin-left: 36px;
  }
 `

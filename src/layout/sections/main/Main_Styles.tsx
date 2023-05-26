@@ -23,7 +23,7 @@ const AboutMe = styled.h1`
     line-height: 22px;
     text-align: left;
     width: 304px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 100px;
   }
 `

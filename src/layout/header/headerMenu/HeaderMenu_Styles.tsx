@@ -16,7 +16,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     background: ${theme.colors.secondary};
     position: absolute;
     left: 22px;
-    bottom: 20px;
+    bottom: 11px;
     border-radius: 4px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -49,7 +49,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0);
-        width: 36px
+        width: 28px
       `}
     }
   }
@@ -63,6 +63,7 @@ const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 99999;
   display: none;
+  overflow: hidden;
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     display: flex;

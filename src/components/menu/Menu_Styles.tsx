@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "styles/Theme.styled";
 
 const Link = styled.a`
   font-size: 16px;
@@ -21,7 +22,18 @@ const Link = styled.a`
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
   }
   
-  :hover::after { width: 80%; }
+  :hover::after { width: 80%; };
+  
+  @media ${theme.media.tablet}{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    
+    ::after{
+      display: none;
+    }
+  }
 `
 const MenuItem = styled.li`
   list-style-type: none;

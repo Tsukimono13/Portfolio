@@ -11,7 +11,7 @@ export const Works: React.FC = () => {
     const tags = ['react', 'redux', 'css']
 
     const [width, setWidth] = React.useState(window.innerWidth);
-    const breakpoint = 768;
+    const breakpoint = 820;
 
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
