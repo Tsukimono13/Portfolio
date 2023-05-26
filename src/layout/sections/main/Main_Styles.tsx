@@ -8,7 +8,7 @@ const MainDiv = styled.div`
   display: flex;
   @media ${theme.media.mobile} {
     margin-top: 64px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 `
 
@@ -40,6 +40,7 @@ const MyPhoto = styled.img`
     width: 316px;
     height: 303px;
     margin-top: 32px;
+    margin-bottom: 50px;
   }
 `
 
@@ -57,7 +58,6 @@ const Shadow = styled.img`
   top: 140px;
   width: 769px;
   height: 638px;
- 
 
   @media screen and (max-width: 1120px) {
     display: none;

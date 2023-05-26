@@ -5,6 +5,8 @@ import {Skills} from "layout/sections/skills/Skills";
 import {Footer} from "layout/footer/Footer";
 import {Contact} from "layout/sections/contacts/Contact";
 import {Works} from "layout/sections/works/Works";
+import {GoTop} from "components/goTopBtn/GoTop";
+
 
 function App() {
     return (
@@ -15,6 +17,7 @@ function App() {
             <Works/>
             <Contact/>
             <Footer/>
+            <GoTop/>
         </div>
     );
 }

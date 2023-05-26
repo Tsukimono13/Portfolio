@@ -63,7 +63,7 @@ const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   bottom: 0;
   z-index: 99999;
   display: none;
-  overflow: hidden;
+  
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     display: flex;
