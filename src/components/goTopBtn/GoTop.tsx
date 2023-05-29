@@ -37,7 +37,7 @@ const ButtonStyle = styled.div`
   cursor: pointer;
   
   @media ${theme.media.tablet}{
-    right: 30px;
+    right: 26px;
   }
 `
 const Icon = styled.img`
