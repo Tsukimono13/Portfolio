@@ -5,7 +5,7 @@ const Main = styled.div`
   background: ${theme.colors.secondary};
   min-height: 70vh;
 `
-const SkillContainer = styled.div`
+const StackContainer = styled.div`
   width: 756px;
   margin-bottom: 136px;
   
@@ -14,4 +14,4 @@ const SkillContainer = styled.div`
   }
 `
 
-export const S = {Main, SkillContainer}
+export const S = {Main, StackContainer}

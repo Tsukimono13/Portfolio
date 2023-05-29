@@ -8,7 +8,6 @@ import {S} from "layout/sections/main/Main_Styles"
 import Tilt from 'react-parallax-tilt';
 
 
-
 export const Main: React.FC = () => {
     return (
         <S.MainDiv id={'main'}>
@@ -16,8 +15,8 @@ export const Main: React.FC = () => {
                 <Wrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
                     <div>
                         <S.NameImg src={name}/>
-                        <S.AboutMe>I'm a Front-End developer from Russia, but now living in Istanbul. I'm interested in
-                            programming and everything connected with it. Will be glad to code your project!</S.AboutMe>
+                            <S.AboutMe>I'm a Front-End developer from Russia, but now living in Istanbul. I'm interested in
+                                programming and everything connected with it. Will be glad to code your project!</S.AboutMe>
                     </div>
                     <div>
                         <Tilt className="tilt-img"

@@ -9,7 +9,8 @@ import html from "assets/icons/stackIcons/htnl.svg";
 import tailwind from "assets/icons/stackIcons/tailwind.svg";
 import material from "assets/icons/stackIcons/material.svg";
 import next from "assets/icons/stackIcons/next.svg";
-import {S} from "components/skill/Skill_Styles"
+import {S} from "components/stack/Stack_Styles"
+import {Fade} from "react-awesome-reveal";
 
 const stackIcons = [
     {icon: react, title: 'React'}, {icon: next, title: 'Next.js'},
@@ -18,16 +19,18 @@ const stackIcons = [
     {icon: tailwind, title: 'Tailwind'}, {icon: material, title: 'Material UI'}
 ]
 
-const SkillCart = () => {
+const Stack = () => {
     return (
         <S.ContainerForIcons>
+            <Fade cascade={true} damping={0.2}>
             {stackIcons.map((i, index) => <div key={index}>
                 <S.StyledIcon src={i.icon}/>
                 <S.StyledDescription>{i.title}</S.StyledDescription>
             </div>)}
+            </Fade>
         </S.ContainerForIcons>
     );
 };
 
-export default SkillCart;
+export default Stack;
 
