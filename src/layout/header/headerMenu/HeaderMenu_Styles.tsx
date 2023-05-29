@@ -56,14 +56,13 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `
 const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
-  background: #F29CEF;
+  background: rgba(242, 156, 239, 0.88);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 99999;
   display: none;
-  
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     display: flex;
@@ -80,6 +79,10 @@ const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   }
 `
 const MobileMenu = styled.nav`
+    display: none;
+  @media ${theme.media.tablet}{
+    display: block;
+  }
 `
 const DesktopMenu = styled.nav`
   ul {

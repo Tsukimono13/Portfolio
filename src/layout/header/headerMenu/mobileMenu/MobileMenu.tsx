@@ -9,6 +9,7 @@ export const MobileMenu: React.FC = () => {
     const OnClickBurgerBtn = () => {
         setIsOpenMenu(!isOpenMenu)
     }
+
     return (
         <S.MobileMenu>
             <S.BurgerButton onClick={OnClickBurgerBtn} isOpen={isOpenMenu}>

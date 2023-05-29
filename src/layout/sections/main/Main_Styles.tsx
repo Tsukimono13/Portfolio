@@ -26,7 +26,7 @@ const AboutMe = styled.h1`
     text-align: left;
     width: 304px;
     margin-top: 20px;
-    //margin-bottom: 100px;
+   padding-bottom: 70px;
   }
 `
 const MyPhoto = styled.img`
