@@ -1,7 +1,11 @@
 import React from 'react';
 import {S} from "components/menu/Menu_Styles"
 
-export const Menu: React.FC = () => {
+type MenuPropsType = {
+    setIsOpenMenu?: (state: boolean) => void
+}
+
+export const Menu: React.FC<MenuPropsType> = ({setIsOpenMenu}) => {
     const menuItems = [
         {title: 'About me', href: "main"},
         {title: 'Stack', href: "stack"},
@@ -10,18 +14,19 @@ export const Menu: React.FC = () => {
     ]
 
     return (
-            <ul>
-                {menuItems.map((item, index) => <S.MenuItem key={index}>
-                    <S.NavLink to={item.href}
-                               smooth={true}
-                               activeClass={"active"}
-                               spy={true}
-                    >
-                        {item.title}
-                    </S.NavLink>
-                </S.MenuItem>)
-                }
-            </ul>
+        <ul>
+            {menuItems.map((item, index) => <S.MenuItem key={index}>
+                <S.NavLink to={item.href}
+                           smooth={true}
+                           activeClass={"active"}
+                           spy={true}
+                           onClick={() => setIsOpenMenu ? setIsOpenMenu(false) : ''}
+                >
+                    {item.title}
+                </S.NavLink>
+            </S.MenuItem>)
+            }
+        </ul>
     );
 };
 

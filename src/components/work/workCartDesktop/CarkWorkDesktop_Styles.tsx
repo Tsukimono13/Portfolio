@@ -86,3 +86,4 @@ const ImgProject = styled.img`
 `
 
 export const S = {TagsStyled, ImgProject, ContentContainer, IconArrowStyled, UlStyled, Description, Title, LiStyled}
+

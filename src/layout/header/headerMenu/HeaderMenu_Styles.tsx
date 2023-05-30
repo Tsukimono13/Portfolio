@@ -3,7 +3,7 @@ import {theme} from "styles/Theme.styled";
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
-  top: -127px;
+  top: -132px;
   right: -100px;
   width: 200px;
   height: 200px;
@@ -56,27 +56,38 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `
 const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
-  background: rgba(242, 156, 239, 0.88);
+  background: rgba(242, 156, 239);
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 99999;
-  display: none;
+  display: flex;
 
-  ${props => props.isOpen && css<{ isOpen: boolean }>`
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  `}
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateY(-100%);
+  transition: 0.8s ease-in-out;
+
+ 
   ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 25px;
     flex-direction: column;
     margin-bottom: 105px;
+    transition: 0.8s ease-in-out;
   }
+  
+  ${props => props.isOpen && css<{ isOpen: boolean }>`
+    transform: translateY(0);
+    
+   & ul{
+     gap: 48px;
+    }
+  `}
+  
 `
 const MobileMenu = styled.nav`
     display: none;

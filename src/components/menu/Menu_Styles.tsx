@@ -34,6 +34,7 @@ const NavLink = styled(Link)`
     font-weight: 400;
     line-height: 56px;
     text-align: left;
+    padding-left: 0;
 
     ::after {
       display: none;

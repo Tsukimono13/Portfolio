@@ -19,7 +19,8 @@ const Link = styled.a`
   cursor: pointer;
 }
  @media ${theme.media.tablet}{
-   margin-top: 36px;
+   margin-top: 35px;
    margin-left: 36px;
+   padding-bottom: 6px;
  }
 `
