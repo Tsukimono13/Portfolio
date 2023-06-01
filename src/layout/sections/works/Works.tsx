@@ -5,11 +5,10 @@ import {Container} from "components/Container";
 import {Title} from "components/title/Title";
 import {CartWorkDesktop} from "components/work/workCartDesktop/CartWorkDesktop";
 import {CartWorkMobile} from "components/work/workCartMobile/CartWorkMobile";
+import {works} from "layout/sections/works/Projects";
 
 
 export const Works: React.FC = () => {
-    const tags = ['react', 'redux', 'css']
-
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 820;
 
@@ -25,12 +24,10 @@ export const Works: React.FC = () => {
             <Container>
                 <Title title={'Projects'} color={`${theme.colors.text}`}/>
                 <S.WorkCards>
-                    {width > breakpoint ? <CartWorkDesktop title={'Title'} img={''} tags={tags}/>
-                        : <CartWorkMobile title={'Title'} tags={tags} img={''}/>}
-                    {width > breakpoint ? <CartWorkDesktop title={'Title diact rgkgkg'} img={''} tags={tags}/>
-                        : <CartWorkMobile title={'Title diact rgkgkg'} tags={tags} img={''}/>}
-                    {width > breakpoint ? <CartWorkDesktop title={'Title diact rgkgkg'} img={''} tags={tags}/>
-                        : <CartWorkMobile title={'Title diact rgkgkg'} tags={tags} img={''}/>}
+                    {works.map((work, index) => (
+                        width > breakpoint ? <CartWorkDesktop key={index} work={work}/> :
+                            <CartWorkMobile key={index} work={work}/>
+                    ))}
                 </S.WorkCards>
             </Container>
         </S.MainDiv>

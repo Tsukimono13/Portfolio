@@ -2,12 +2,13 @@ import styled from "styled-components";
 import {theme} from "styles/Theme.styled";
 
 const ContextBlock = styled.div`
-  margin-left: 36px;
+  margin-left: 23px;
 `
 const TagsStyled = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
+  flex-wrap: wrap;
 `
 const Link = styled.a`
 `

@@ -82,9 +82,9 @@ const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     transform: translateY(0);
-    
-   & ul{
-     gap: 48px;
+
+    & ul {
+      gap: 48px;
     }
   `}
   

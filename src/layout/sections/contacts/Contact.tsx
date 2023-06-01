@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
                 <Wrapper justify={'center'} align={'center'} direction={'column'}>
                     <Title title={'Contact'} color={`${theme.colors.primary}`}/>
                     <S.WelcomeText>Write me if you have questions, suggestions or just want to chat :)</S.WelcomeText>
-                    <S.ButtonStyled>Send message</S.ButtonStyled>
+                    <a href={'https://t.me/tsuki1301'}><S.ButtonStyled>Send message</S.ButtonStyled></a>
                 </Wrapper>
             </Container>
         </S.MainDiv>

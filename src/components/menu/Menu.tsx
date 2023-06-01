@@ -20,6 +20,7 @@ export const Menu: React.FC<MenuPropsType> = ({setIsOpenMenu}) => {
                            smooth={true}
                            activeClass={"active"}
                            spy={true}
+                           offset={-10}
                            onClick={() => setIsOpenMenu ? setIsOpenMenu(false) : ''}
                 >
                     {item.title}

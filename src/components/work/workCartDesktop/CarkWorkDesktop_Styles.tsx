@@ -34,7 +34,7 @@ const Title = styled.h3`
   color: rgba(255, 255, 255, 1);
   padding-bottom: 12px;
   text-align: left;
-  margin-bottom: 52px;
+  margin-bottom: 32px;
 `
 const Description = styled.p`
   font-size: 16px;

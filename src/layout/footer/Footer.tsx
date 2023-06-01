@@ -7,16 +7,23 @@ import {Container} from "components/Container";
 import {Wrapper} from "components/FlexWrapper";
 
 export const Footer: React.FC = () => {
-    const icons = [github, instagram, linkedin]
+    const icons = [
+        {icon: github, link: 'https://github.com/Tsukimono13'},
+        {icon: instagram, link: 'https://www.instagram.com/tsukimono13/'},
+        {icon: linkedin, link: 'https://www.linkedin.com/in/irina-litvinova-971397266/'}
+    ]
     return (
         <S.MainDiv>
             <Container>
                 <Wrapper justify={'center'} align={'center'} direction={'column'}>
                     <S.IconContainer>
-                        {icons.map((icon, index) => <a key={index} href={''}><S.Icons src={icon}/> </a>)}
+                        {icons.map((i, index) => <a key={index} href={i.link} target="_blank"><S.Icons src={i.icon}/></a>)}
                     </S.IconContainer>
                     <S.MyNameServe>© Irina Litvinova, 2023</S.MyNameServe>
-                    <S.DesignName>Design: <S.LinkDesignName href={''}>Anton Kartenov</S.LinkDesignName></S.DesignName>
+                    <S.DesignName>Design: <S.LinkDesignName href={'https://www.behance.net/psybolord-3000'}
+                                                            target="_blank">
+                        Anton Kartenov
+                    </S.LinkDesignName></S.DesignName>
                 </Wrapper>
             </Container>
         </S.MainDiv>
