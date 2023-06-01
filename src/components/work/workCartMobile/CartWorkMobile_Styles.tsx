@@ -36,7 +36,7 @@ const Tags = styled.p`
 `
 const ProjectImg = styled.img`
   height: 214px;
-  min-width: 415px;
+  width: 415px;
   border: 4px solid #F29CEF;
   margin-bottom: 16px;
 `
