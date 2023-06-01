@@ -11,7 +11,7 @@ const WorkCards = styled.div`
   align-items: center;
   gap: 48px;
   flex-direction: column;
-  padding-bottom: 128px;
+  padding-bottom: 88px;
 
   @media ${theme.media.tablet} {
     gap: 0;

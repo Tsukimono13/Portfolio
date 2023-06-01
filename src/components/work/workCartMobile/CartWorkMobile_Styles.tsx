@@ -2,19 +2,21 @@ import styled from "styled-components";
 import {theme} from "styles/Theme.styled";
 
 const ContextBlock = styled.div`
-  margin-left: 23px;
+  margin-left: 36px;
 `
 const TagsStyled = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
+  padding-bottom: 40px;
+  width: 360px;
 `
 const Link = styled.a`
 `
 const CartWork = styled.div`
-  height: 335px;
-  min-width: 415px;
+  min-height: 335px;
+  width: 415px;
 `
 const Title = styled.h3`
   font-size: 20px;
