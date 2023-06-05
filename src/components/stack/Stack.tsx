@@ -23,10 +23,10 @@ const Stack = () => {
     return (
         <S.ContainerForIcons>
             <Fade cascade={true} damping={0.2}>
-            {stackIcons.map((i, index) => <div key={index}>
-                <S.StyledIcon src={i.icon}/>
-                <S.StyledDescription>{i.title}</S.StyledDescription>
-            </div>)}
+                {stackIcons.map((i, index) => <div key={index}>
+                    <S.StyledIcon src={i.icon}/>
+                    <S.StyledDescription>{i.title}</S.StyledDescription>
+                </div>)}
             </Fade>
         </S.ContainerForIcons>
     );

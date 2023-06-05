@@ -3,7 +3,7 @@ import {theme} from "styles/Theme.styled";
 import {Container} from "components/Container";
 import {Wrapper} from "components/FlexWrapper";
 import {Title} from "components/title/Title";
-import { S } from './Contact_Styles';
+import {S} from './Contact_Styles';
 
 export const Contact: React.FC = () => {
     return (
