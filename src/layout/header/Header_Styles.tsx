@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   top: 0;
   right: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 999999999999;
 `
 
 export const S = {StyledHeader}
