@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.3858ec52.css",
-    "main.js": "/Portfolio/static/js/main.a6e44257.js",
+    "main.js": "/Portfolio/static/js/main.e550cdc2.js",
     "static/js/787.25eaef86.chunk.js": "/Portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/pizza.png": "/Portfolio/static/media/pizza.cdeea2cda739ab8fe322.png",
     "static/media/scroll.png": "/Portfolio/static/media/scroll.a71b07157a1e3154ca70.png",
@@ -9,6 +9,7 @@
     "static/media/myPhoto.png": "/Portfolio/static/media/myPhoto.3010048878583beeb85b.png",
     "static/media/shadow.png": "/Portfolio/static/media/shadow.58d4a8ddee2b7e0f9ffa.png",
     "static/media/sneakers.png": "/Portfolio/static/media/sneakers.483e952ba0e5c8cde1ce.png",
+    "static/media/hotels.png": "/Portfolio/static/media/hotels.71e3c877256506a9d418.png",
     "static/media/searching.png": "/Portfolio/static/media/searching.281298bb0f2ba8c26249.png",
     "static/media/todolist.png": "/Portfolio/static/media/todolist.6ea7e182aa58c6978086.png",
     "static/media/react.svg": "/Portfolio/static/media/react.abd424fb1511395da0350db313c48d97.svg",
@@ -29,11 +30,11 @@
     "static/media/black_arrow.svg": "/Portfolio/static/media/black_arrow.dd08cea80f4a3f9d95fe0ed19a9e5834.svg",
     "static/media/material.svg": "/Portfolio/static/media/material.597652963adeecdbb7fab18d8e8eb831.svg",
     "static/media/Logo.svg": "/Portfolio/static/media/Logo.c63e8439163d80feeca316dd2d999324.svg",
-    "main.a6e44257.js.map": "/Portfolio/static/js/main.a6e44257.js.map",
+    "main.e550cdc2.js.map": "/Portfolio/static/js/main.e550cdc2.js.map",
     "787.25eaef86.chunk.js.map": "/Portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3858ec52.css",
-    "static/js/main.a6e44257.js"
+    "static/js/main.e550cdc2.js"
   ]
 }
