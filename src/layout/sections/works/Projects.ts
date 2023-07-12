@@ -3,6 +3,7 @@ import pizza from 'assets/image/works/pizza.png'
 import sneakers from 'assets/image/works/sneakers.png'
 import github from 'assets/image/works/searching.png'
 import scroll from 'assets/image/works/scroll.png'
+import hotels from 'assets/image/works/hotels.png'
 
 export type WorkType = {
     title: string,
@@ -23,6 +24,12 @@ export const works: WorkType[] = [
         img: pizza,
         link: 'https://react-redux-pizza-blush.vercel.app/',
         tags: ['React', 'Redux-Toolkit', 'TypeScript', 'SCSS']
+    },
+    {
+        title: 'Booking Hotels',
+        img: hotels,
+        link: 'https://tsukimono13.github.io/Hotels_webpage/',
+        tags: ['React', 'TypeScript', 'Styled Components']
     },
     {
         title: 'Sneakers Website',
