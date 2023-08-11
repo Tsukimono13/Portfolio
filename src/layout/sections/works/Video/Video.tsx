@@ -14,7 +14,6 @@ export const Video: React.FC = () => {
                 loop={true}
                 playing={true}
                 muted={true}
-                playsinline={true}
             />
         </S.VideoBox>
     );
