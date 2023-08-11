@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "styles/Theme.styled";
 
 const ContextBlock = styled.div`
-  margin-left: 36px;
+  //margin-left: 36px;
 `
 const TagsStyled = styled.div`
   display: flex;
@@ -42,9 +42,5 @@ const ProjectImg = styled.img`
   border: 4px solid #F29CEF;
   margin-bottom: 16px;
 `
-const IconArrowStyled = styled.img`
-  width: 28px;
-  height: 18px;
-  margin-left: 8px;
-`
-export const S = {IconArrowStyled, ProjectImg, Tags, Title, CartWork, Link, TagsStyled, ContextBlock}
+
+export const S = {ProjectImg, Tags, Title, CartWork, Link, TagsStyled, ContextBlock}
