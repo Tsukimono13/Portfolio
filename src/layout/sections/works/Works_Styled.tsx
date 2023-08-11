@@ -9,9 +9,9 @@ const WorkCards = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 64px;
   flex-direction: column;
-  padding-bottom: 88px;
+  padding-bottom: 136px;
 
   @media ${theme.media.tablet} {
     gap: 0;
