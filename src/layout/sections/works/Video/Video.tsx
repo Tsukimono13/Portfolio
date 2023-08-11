@@ -13,6 +13,7 @@ export const Video: React.FC = () => {
                 width='186px'
                 loop={true}
                 playing={true}
+                muted={true}
             />
         </S.VideoBox>
     );
