@@ -9,8 +9,8 @@ const MenuContainer = styled.div`
   margin-bottom: 76px;
 
   @media ${theme.media.tablet} {
-    gap: 8px;
-    margin-bottom: 66px;
+    gap: 12px;
+    margin-bottom: 48px;
   }
 `
 
@@ -20,6 +20,7 @@ const MenuButton = styled.button`
   line-height: 32px;
   padding: 16px 28px;
   cursor: pointer;
+  color: ${theme.colors.text};
 
   &.active {
     background: #F29CEF;
@@ -28,9 +29,9 @@ const MenuButton = styled.button`
   }
 
   @media ${theme.media.tablet}{
-    font-size: 26px;
-    line-height: 28px;
-    padding: 12px 24px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 20px;
   }
 `
 export const S = {MenuButton, MenuContainer}

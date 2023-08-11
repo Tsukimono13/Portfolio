@@ -15,6 +15,7 @@ const WorkCards = styled.div`
 
   @media ${theme.media.tablet} {
     gap: 0;
+    padding-bottom: 64px;
   }
 `
 export const S = {MainDiv, WorkCards}

@@ -1,23 +1,18 @@
 import styled from "styled-components";
 import {theme} from "styles/Theme.styled";
 
-const ContextBlock = styled.div`
-  //margin-left: 36px;
-`
+
 const TagsStyled = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 4px;
   flex-wrap: wrap;
   padding-bottom: 40px;
-  width: 360px;
+  width: 305px;
 `
 const Link = styled.a`
 `
-const CartWork = styled.div`
-  min-height: 335px;
-  width: 415px;
-`
+
 const Title = styled.h3`
   font-size: 20px;
   font-weight: 700;
@@ -37,10 +32,11 @@ const Tags = styled.p`
   padding: 7px 16px 5px;
 `
 const ProjectImg = styled.img`
-  height: 214px;
-  width: 415px;
+  height: 152px;
+  width: 305px;
   border: 4px solid #F29CEF;
   margin-bottom: 16px;
+  border-radius: 12px;
 `
 
-export const S = {ProjectImg, Tags, Title, CartWork, Link, TagsStyled, ContextBlock}
+export const S = {ProjectImg, Tags, Title, Link, TagsStyled}

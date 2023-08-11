@@ -29,12 +29,17 @@ export const Works: React.FC = () => {
     return (
         <S.MainDiv id={'works'}>
             <Container>
-                <Title title={'Projects'} color={`${theme.colors.text}`}/>
-                <TabMenu selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
+                <Title title={'Projects'}
+                       color={`${theme.colors.text}`}
+                       marginBot={'20px'}/>
+                <TabMenu selectedTab={selectedTab}
+                         setSelectedTab={setSelectedTab}
+                />
                 <S.WorkCards>
                     {filteredWorks.map((work, index) => (
-                        width > breakpoint ? <CartWorkDesktop key={index} work={work} /> :
-                            <CartWorkMobile key={index} work={work}/>
+                        width > breakpoint
+                            ? <CartWorkDesktop key={index} work={work}/>
+                            : <CartWorkMobile key={index} work={work}/>
                     ))}
                 </S.WorkCards>
             </Container>
