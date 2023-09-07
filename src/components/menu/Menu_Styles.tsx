@@ -42,7 +42,7 @@ const NavLink = styled(Link)`
   }
 `
 const MenuItem = styled.li`
-  :hover{
+  :hover {
     cursor: pointer;
   }
 `
