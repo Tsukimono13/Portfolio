@@ -15,7 +15,7 @@ export const Main: React.FC = () => {
                 <Wrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
                     <div>
                         <S.NameImg src={name}/>
-                            <S.AboutMe>I'm a React developer from Russia, but now living in Istanbul. I'm interested in
+                            <S.AboutMe>I'm a React developer from Russia, but now living in Nha Trang. I'm interested in
                                 programming and everything connected with it. Will be glad to code your project!</S.AboutMe>
                     </div>
                     <div>

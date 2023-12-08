@@ -6,7 +6,6 @@ const VideoBox = styled.div`
   position: absolute;
   top: 41px;
   left: 390px;
-  width: 100%;
   height: 100%;
   z-index: 1;
 
