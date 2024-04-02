@@ -5,6 +5,8 @@ import github from 'assets/image/works/searching.png'
 import scroll from 'assets/image/works/scroll.png'
 import hotels from 'assets/image/works/hotels.png'
 import news from 'assets/image/works/newsApp.png'
+import luxus from 'assets/image/works/luxus.png'
+import articles from 'assets/image/works/articles.png'
 
 export type WorkType = {
     title: string
@@ -16,6 +18,20 @@ export type WorkType = {
 }
 
 export const works: WorkType[] = [
+    {
+        title: 'Production Web site',
+        img: luxus,
+        link: 'https://luxusco.com/',
+        category: 'web',
+        tags: ['React', 'Redux', 'TypeScript', 'SCSS']
+    },
+    {
+        title: 'Articles App',
+        img: articles,
+        link: 'https://github.com/Tsukimono13/Production_project',
+        category: 'web',
+        tags: ['React', 'Redux-Toolkit', 'RTK Query', 'TypeScript']
+    },
     {
         title: 'Todolist',
         img: todolist,

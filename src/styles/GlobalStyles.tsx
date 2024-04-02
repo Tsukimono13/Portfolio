@@ -1,7 +1,5 @@
 import {createGlobalStyle} from "styled-components";
 
-
-
 export const GlobalStyles = createGlobalStyle`
   *,
   *::before,
@@ -33,6 +31,25 @@ export const GlobalStyles = createGlobalStyle`
     border: none;
     background-color: unset;
   }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(240, 215, 240, 0.9);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(229, 199, 229, 1);
+}
   
 `
 

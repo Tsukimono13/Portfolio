@@ -12,7 +12,7 @@ export const Main: React.FC = () => {
     return (
         <S.MainDiv id={'main'}>
             <Container>
-                <Wrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'}>
+                <Wrapper align={'center'} justify={'space-around'} wrap={'wrap-reverse'} >
                     <div>
                         <S.NameImg src={name}/>
                             <S.AboutMe>I'm a React developer from Russia, but now living in Nha Trang. I'm interested in

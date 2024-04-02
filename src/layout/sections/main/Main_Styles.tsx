@@ -37,6 +37,7 @@ const MyPhoto = styled.img`
   position: relative;
   z-index: 9999;
   margin-top: 50px;
+  overflow-y: hidden;
 
   @media ${theme.media.tablet} {
     width: 316px;
