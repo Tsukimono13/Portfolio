@@ -7,6 +7,7 @@ import hotels from 'assets/image/works/hotels.png'
 import news from 'assets/image/works/newsApp.png'
 import luxus from 'assets/image/works/luxus.png'
 import articles from 'assets/image/works/articles.png'
+import social from 'assets/image/works/social.png'
 
 export type WorkType = {
     title: string
@@ -29,6 +30,13 @@ export const works: WorkType[] = [
         title: 'Articles App',
         img: articles,
         link: 'https://github.com/Tsukimono13/Production_project',
+        category: 'web',
+        tags: ['React', 'Redux-Toolkit', 'RTK Query', 'TypeScript']
+    },
+    {
+        title: 'Social App',
+        img: social,
+        link: 'https://github.com/Tsukimono13/Social-App',
         category: 'web',
         tags: ['React', 'Redux-Toolkit', 'RTK Query', 'TypeScript']
     },
