@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.3858ec52.css",
-    "main.js": "/Portfolio/static/js/main.12a6f0c4.js",
+    "main.js": "/Portfolio/static/js/main.08f0879e.js",
     "static/js/787.25eaef86.chunk.js": "/Portfolio/static/js/787.25eaef86.chunk.js",
     "static/media/luxus.png": "/Portfolio/static/media/luxus.8832899ad1895dbfa486.png",
     "static/media/pizza.png": "/Portfolio/static/media/pizza.cdeea2cda739ab8fe322.png",
+    "static/media/rickAndMorty.png": "/Portfolio/static/media/rickAndMorty.c243200624da7d6195c5.png",
     "static/media/scroll.png": "/Portfolio/static/media/scroll.a71b07157a1e3154ca70.png",
     "static/media/newsApp.png": "/Portfolio/static/media/newsApp.c7933ca15798b96bfda1.png",
     "static/media/name.svg": "/Portfolio/static/media/name.b461cbf9bfcfae8510cdf00d870e1183.svg",
@@ -33,11 +34,11 @@
     "static/media/tailwind.svg": "/Portfolio/static/media/tailwind.ffde616b52e31702165e046f5f4dfa3e.svg",
     "static/media/material.svg": "/Portfolio/static/media/material.597652963adeecdbb7fab18d8e8eb831.svg",
     "static/media/Logo.svg": "/Portfolio/static/media/Logo.c63e8439163d80feeca316dd2d999324.svg",
-    "main.12a6f0c4.js.map": "/Portfolio/static/js/main.12a6f0c4.js.map",
+    "main.08f0879e.js.map": "/Portfolio/static/js/main.08f0879e.js.map",
     "787.25eaef86.chunk.js.map": "/Portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3858ec52.css",
-    "static/js/main.12a6f0c4.js"
+    "static/js/main.08f0879e.js"
   ]
 }
