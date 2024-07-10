@@ -8,6 +8,7 @@ import news from 'assets/image/works/newsApp.png'
 import luxus from 'assets/image/works/luxus.png'
 import articles from 'assets/image/works/articles.png'
 import social from 'assets/image/works/social.png'
+import rmSearch from 'assets/image/works/rickAndMorty.png'
 
 export type WorkType = {
     title: string
@@ -46,6 +47,13 @@ export const works: WorkType[] = [
         link: 'https://tsukimono13.github.io/To_do_list/#/',
         category: 'web',
         tags: ['React', 'Redux-Toolkit', 'TypeScript', 'Material-UI']
+    },
+    {
+        title: 'Rick And Morty Search',
+        img: rmSearch,
+        category: 'web',
+        link: 'https://rick-and-morty-search-sigma.vercel.app/',
+        tags: ['React', 'Redux-Toolkit', 'TypeScript', 'Tailwind']
     },
     {
         title: 'Pizza Web Project',
