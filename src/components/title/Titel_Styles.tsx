@@ -1,24 +1,19 @@
-import {theme} from "styles/Theme.styled";
+import { theme } from "styles/Theme.styled";
 import styled from "styled-components";
-import {TitlePropsType} from "./Title";
+import { TitlePropsType } from "./Title";
 
-const StyledTitle = styled.h2<Omit<TitlePropsType, 'title'>>`
-  font-size: 88px;
+const StyledTitle = styled.h2<Omit<TitlePropsType, "title">>`
+  font-size: 72px;
   font-weight: 800;
-  line-height: 101px;
-  margin-top: 92px;
-  margin-bottom: 72px;
-  color: ${props => props.color || 'red'};
+  line-height: 120%;
+  color: ${(props) => props.color || "red"};
+  text-align: ${(props) => props.position || "center"};
 
   @media ${theme.media.mobile} {
     font-size: 60px;
     line-height: 69px;
     margin-top: 56px;
-    margin-bottom: ${props => props.marginBot || '48px'};
   }
-`
-const TitleContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`
-export const S = {StyledTitle, TitleContainer}
+`;
+
+export const S = { StyledTitle };

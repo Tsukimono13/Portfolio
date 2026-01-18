@@ -13,7 +13,7 @@ export const Main: React.FC = () => {
       <Container>
         <Wrapper
           align={"center"}
-          justify={"space-around"}
+          justify={"space-between"}
           wrap={"wrap-reverse"}
         >
           <div>

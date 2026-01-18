@@ -10,6 +10,11 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Epilogue', sans-serif;
   }
 
+  html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   body {
     margin: 0;
     font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,6 +22,8 @@ export const GlobalStyles = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   a {

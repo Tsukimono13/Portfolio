@@ -7,7 +7,10 @@ const StyledHeader = styled.header`
   top: 0;
   right: 0;
   left: 0;
+  width: 100%;
+  max-width: 100%;
   z-index: 999999999999;
+  box-sizing: border-box;
 `
 
 export const S = {StyledHeader}
