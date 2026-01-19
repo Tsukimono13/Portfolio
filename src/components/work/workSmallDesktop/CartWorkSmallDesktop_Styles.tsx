@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import { theme } from "styles/Theme.styled";
 
-const ContentContainer = styled.div`
-  display: flex;
-  gap: 40px;
-`;
+const ContentContainer = styled.div``;
 
 const DescriptionContainer = styled.div`
   display: flex;
@@ -19,6 +16,7 @@ const TagsStyled = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
+  max-width: 590px;
 `;
 
 const Title = styled.h3`
@@ -50,8 +48,8 @@ const Description = styled.p`
 
 const ImgProject = styled.img`
   transition: all 0.2s linear;
-  width: 740px;
-  height: 420px;
+  width: 590px;
+  height: 336px;
   border: 8px solid #f29cef;
   border-radius: 32px;
   object-fit: cover;

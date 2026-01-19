@@ -7,6 +7,7 @@ const MenuContainer = styled.div`
   align-items: center;
   gap: 16px;
   margin-bottom: 76px;
+  margin-top: 52px;
 
   @media ${theme.media.tablet} {
     gap: 12px;

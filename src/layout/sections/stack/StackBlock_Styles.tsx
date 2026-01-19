@@ -7,7 +7,6 @@ const Main = styled.div`
 
 const StackContainer = styled.div`
   display: flex;
-  padding: 100px 0 150px 0;
   gap: 71px;
   @media ${theme.media.tablet} {
   }

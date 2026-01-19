@@ -8,7 +8,7 @@ import { Title } from "components/title/Title";
 export const StackBlock: React.FC = () => {
   return (
     <S.Main id={"stack"}>
-      <Container>
+      <Container $padding="100px 0 150px">
         <Wrapper justify={"center"} align={"center"} direction={"column"}>
           <S.StackContainer>
             <S.StackTextBlock>

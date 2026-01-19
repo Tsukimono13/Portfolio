@@ -9,8 +9,10 @@ import luxus from "assets/image/works/luxus.png";
 import articles from "assets/image/works/articles.png";
 import social from "assets/image/works/social.png";
 import rmSearch from "assets/image/works/rickAndMorty.png";
-import buka from 'assets/image/works/buka.png'
-import theo from 'assets/image/works/theo.png'
+import buka from "assets/image/works/buka.png";
+import theo from "assets/image/works/theo.png";
+
+export type WorkVariant = "large" | "small";
 
 export type WorkType = {
   title: string;
@@ -19,6 +21,8 @@ export type WorkType = {
   category: string;
   tags: string[];
   hasVideo?: boolean;
+  description?: string;
+  variant: WorkVariant;
 };
 
 export const works: WorkType[] = [
@@ -28,6 +32,9 @@ export const works: WorkType[] = [
     link: "https://luxusco.com/",
     category: "web",
     tags: ["React", "Redux", "TypeScript", "SCSS"],
+    description:
+      "A production website for a luxury fashion brand showcasing their products and collections.",
+    variant: "large",
   },
   {
     title: "Buka Shop",
@@ -35,6 +42,9 @@ export const works: WorkType[] = [
     link: "https://shop.buka.ru/",
     category: "web",
     tags: ["Next.js", "Redux", "TypeScript", "SCSS"],
+    description:
+      "An e-commerce platform for Buka Shop, featuring a wide range of products and seamless shopping experience.",
+    variant: "large",
   },
   {
     title: "Theo Ivanov Landing Page",
@@ -42,6 +52,9 @@ export const works: WorkType[] = [
     link: "https://usa.tattoo/seattlebooking/",
     category: "web",
     tags: ["JavaScript", "Gsap", "SCSS"],
+    description:
+      "A landing page for Theo Ivanov, a renowned tattoo artist, showcasing his portfolio and booking information.",
+    variant: "large",
   },
   {
     title: "Articles App",
@@ -49,6 +62,9 @@ export const works: WorkType[] = [
     link: "https://github.com/Tsukimono13/Production_project",
     category: "web",
     tags: ["React", "Redux-Toolkit", "RTK Query", "TypeScript"],
+    description:
+      "A web application for reading and managing articles with user authentication and CRUD functionalities.",
+    variant: "large",
   },
   {
     title: "Social App",
@@ -56,6 +72,7 @@ export const works: WorkType[] = [
     link: "https://github.com/Tsukimono13/Social-App",
     category: "web",
     tags: ["React", "Redux-Toolkit", "RTK Query", "TypeScript"],
+    variant: "small",
   },
   {
     title: "Todolist",
@@ -63,6 +80,7 @@ export const works: WorkType[] = [
     link: "https://tsukimono13.github.io/To_do_list/#/",
     category: "web",
     tags: ["React", "Redux-Toolkit", "TypeScript", "Material-UI"],
+    variant: "small",
   },
   {
     title: "Rick And Morty Search",
@@ -70,6 +88,7 @@ export const works: WorkType[] = [
     category: "web",
     link: "https://rick-and-morty-search-sigma.vercel.app/",
     tags: ["React", "Redux-Toolkit", "TypeScript", "Tailwind"],
+    variant: "small",
   },
   {
     title: "Pizza Web Project",
@@ -77,6 +96,7 @@ export const works: WorkType[] = [
     category: "web",
     link: "https://react-redux-pizza-blush.vercel.app/",
     tags: ["React", "Redux-Toolkit", "TypeScript", "SCSS"],
+    variant: "small",
   },
   {
     title: "Booking Hotels",
@@ -84,6 +104,7 @@ export const works: WorkType[] = [
     category: "web",
     link: "https://tsukimono13.github.io/Hotels_webpage/",
     tags: ["React", "TypeScript", "Styled Components"],
+    variant: "small",
   },
   {
     title: "Sneakers Website",
@@ -91,13 +112,15 @@ export const works: WorkType[] = [
     category: "web",
     link: "https://sneakers-project-wine.vercel.app/",
     tags: ["React", "JavaScript", "SCSS"],
+    variant: "small",
   },
   {
     title: "Searching Users on Github",
     img: github,
     category: "web",
     link: "https://tsukimono13.github.io/Searching_username/",
-    tags: ["React", "Redux-Toolkit", "TypeScript", "RTK Query", "Tailwind"],
+    tags: ["React", "Redux-Toolkit", "TypeScript", "RTK Query"],
+    variant: "small",
   },
   {
     title: "Scroll WebPage",
@@ -105,6 +128,7 @@ export const works: WorkType[] = [
     category: "web",
     link: "https://tsukimono13.github.io/Scroll_WebPage/",
     tags: ["JavaScript", "Gsap", "CSS", "HTML"],
+    variant: "small",
   },
   {
     title: "News App",
@@ -113,5 +137,6 @@ export const works: WorkType[] = [
     link: "https://github.com/Tsukimono13/News_app",
     tags: ["React Native", "JavaScript", "Styled Components"],
     hasVideo: true,
+    variant: "small",
   },
 ];
