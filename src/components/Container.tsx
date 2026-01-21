@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "styles/Theme.styled";
 type ContainerProps = {
   $padding?: string;
+  $mobilePadding?: string;
 };
 
 export const Container = styled.div<ContainerProps>`
@@ -14,6 +15,6 @@ export const Container = styled.div<ContainerProps>`
   padding: ${({ $padding }) => $padding || "0 15px"};
 
   @media ${theme.media.mobile} {
-    padding: ${({ $padding }) => $padding || "0 10px"};
+    padding: ${({ $mobilePadding, $padding }) => $mobilePadding || $padding || "0 10px"};
   }
 `;

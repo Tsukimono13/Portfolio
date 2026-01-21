@@ -12,7 +12,6 @@ const StyledTitle = styled.h2<Omit<TitlePropsType, "title">>`
   @media ${theme.media.mobile} {
     font-size: 60px;
     line-height: 69px;
-    margin-top: 56px;
   }
 `;
 

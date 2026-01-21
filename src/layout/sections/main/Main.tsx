@@ -10,7 +10,7 @@ import Tilt from "react-parallax-tilt";
 export const Main: React.FC = () => {
   return (
     <S.MainDiv id={"main"}>
-      <Container>
+      <Container $mobilePadding="84px 35px 100px">
         <Wrapper
           align={"center"}
           justify={"space-between"}
@@ -19,7 +19,7 @@ export const Main: React.FC = () => {
           <div>
             <S.NameImg src={name} />
             <S.AboutMe>
-              I'm a React developer from Russia, now living in Moscow. I'm
+              I'm a React developer from Russia, living in Moscow. I'm
               interested in programming and everything connected with it. Will
               be glad to code your project!
             </S.AboutMe>

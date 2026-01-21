@@ -12,6 +12,28 @@ import rmSearch from "assets/image/works/rickAndMorty.png";
 import buka from "assets/image/works/buka.png";
 import theo from "assets/image/works/theo.png";
 
+import BukaImage1 from "assets/image/works/buka/img_1.png";
+import BukaImage2 from "assets/image/works/buka/img_2.png";
+import BukaImage3 from "assets/image/works/buka/img_3.png";
+import BukaImage4 from "assets/image/works/buka/img_4.png";
+import BukaImage5 from "assets/image/works/buka/img_5.png";
+import BukaImage6 from "assets/image/works/buka/img_6.png";
+import BukaImage7 from "assets/image/works/buka/img_7.png";
+
+import TheoImage1 from "assets/image/works/theo/img_1.png";
+import TheoImage2 from "assets/image/works/theo/img_2.png";
+import TheoImage3 from "assets/image/works/theo/img_3.png";
+import TheoImage4 from "assets/image/works/theo/img_4.png";
+import TheoImage5 from "assets/image/works/theo/img_5.png";
+import TheoImage6 from "assets/image/works/theo/img_6.png";
+import TheoImage7 from "assets/image/works/theo/img_7.png";
+
+import ArticleImage1 from "assets/image/works/article-project/1_img.png";
+import ArticleImage2 from "assets/image/works/article-project/2_img.png";
+import ArticleImage3 from "assets/image/works/article-project/3_img.png";
+import ArticleImage4 from "assets/image/works/article-project/4_img.png";
+import ArticleImage5 from "assets/image/works/article-project/5_img.png";
+
 export type WorkVariant = "large" | "small";
 
 export type WorkType = {
@@ -23,19 +45,10 @@ export type WorkType = {
   hasVideo?: boolean;
   description?: string;
   variant: WorkVariant;
+  images?: string[];
 };
 
 export const works: WorkType[] = [
-  {
-    title: "Production Web site",
-    img: luxus,
-    link: "https://luxusco.com/",
-    category: "web",
-    tags: ["React", "Redux", "TypeScript", "SCSS"],
-    description:
-      "A production website for a luxury fashion brand showcasing their products and collections.",
-    variant: "large",
-  },
   {
     title: "Buka Shop",
     img: buka,
@@ -43,8 +56,17 @@ export const works: WorkType[] = [
     category: "web",
     tags: ["Next.js", "Redux", "TypeScript", "SCSS"],
     description:
-      "An e-commerce platform for Buka Shop, featuring a wide range of products and seamless shopping experience.",
+      "Worked as part of a development team on the redesign of Buka Shop, an e-commerce platform offering a wide range of products and a seamless shopping experience.",
     variant: "large",
+    images: [
+      BukaImage1,
+      BukaImage2,
+      BukaImage3,
+      BukaImage4,
+      BukaImage5,
+      BukaImage6,
+      BukaImage7,
+    ],
   },
   {
     title: "Theo Ivanov Landing Page",
@@ -53,7 +75,26 @@ export const works: WorkType[] = [
     category: "web",
     tags: ["JavaScript", "Gsap", "SCSS"],
     description:
-      "A landing page for Theo Ivanov, a renowned tattoo artist, showcasing his portfolio and booking information.",
+      "Developed a landing page for Theo Ivanov, a tattoo artist, showcasing portfolio, experience, and bookings, with interactive elements and smooth animations for better user engagement.",
+    variant: "large",
+    images: [
+      TheoImage1,
+      TheoImage2,
+      TheoImage3,
+      TheoImage4,
+      TheoImage5,
+      TheoImage6,
+      TheoImage7,
+    ],
+  },
+  {
+    title: "Luxury Fashion Website",
+    img: luxus,
+    link: "https://luxusco.com/",
+    category: "web",
+    tags: ["React", "Redux", "TypeScript", "SCSS"],
+    description:
+      "Collaborated on the full redesign of a production website for a luxury fashion brand, showcasing their products and collections, as part of a development team.",
     variant: "large",
   },
   {
@@ -63,8 +104,15 @@ export const works: WorkType[] = [
     category: "web",
     tags: ["React", "Redux-Toolkit", "RTK Query", "TypeScript"],
     description:
-      "A web application for reading and managing articles with user authentication and CRUD functionalities.",
+      "Built a web application for reading and managing articles, featuring user authentication, CRUD operations, and comprehensive test coverage.",
     variant: "large",
+    images: [
+      ArticleImage1,
+      ArticleImage2,
+      ArticleImage3,
+      ArticleImage4,
+      ArticleImage5,
+    ],
   },
   {
     title: "Social App",

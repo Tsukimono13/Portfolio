@@ -6,10 +6,6 @@ const MainDiv = styled.div`
   min-height: 100vh;
   background: ${theme.colors.primary};
   display: flex;
-  @media ${theme.media.mobile} {
-    margin-top: 64px;
-    padding-bottom: 50px;
-  }
 `
 
 const AboutMe = styled.h1`
@@ -26,7 +22,7 @@ const AboutMe = styled.h1`
     text-align: left;
     width: 304px;
     margin-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 0px;
   }
 `
 

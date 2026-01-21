@@ -8,7 +8,6 @@ const DescriptionContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 12px;
-  padding-bottom: 44px;
 `;
 
 const TagsStyled = styled.div`
@@ -20,11 +19,11 @@ const TagsStyled = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 115%;
   color: ${theme.colors.text};
-  margin-bottom: 12px;
+  margin-top: 24px;
 `;
 
 const Tags = styled.p`
@@ -35,15 +34,6 @@ const Tags = styled.p`
   border: 1px solid ${theme.colors.text};
   border-radius: 40px;
   padding: 12px 24px 8px;
-`;
-
-const Description = styled.p`
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 140%;
-  color: ${theme.colors.text};
-  max-width: 420px;
-  margin-top: 28px;
 `;
 
 const ImgProject = styled.img`
@@ -66,7 +56,6 @@ export const S = {
   TagsStyled,
   ImgProject,
   Tags,
-  Description,
   Title,
   VideoContainer,
 };

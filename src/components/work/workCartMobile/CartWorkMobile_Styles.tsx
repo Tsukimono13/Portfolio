@@ -11,6 +11,11 @@ const TagsStyled = styled.div`
   width: 305px;
 `
 const Link = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 305px;
 `
 
 const Title = styled.h3`

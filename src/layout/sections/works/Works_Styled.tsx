@@ -18,13 +18,34 @@ const FeaturedWorks = styled.div`
 `;
 
 const SmallWorks = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 590px);
   justify-content: center;
-  align-items: center;
   row-gap: 48px;
   column-gap: 20px;
   margin-top: 88px;
-  flex-wrap: wrap;
+
+  /* Для последнего нечетного элемента - выравниваем слева */
+  > *:last-child:nth-child(odd) {
+    justify-self: start;
+  }
+
+  @media ${theme.media.tablet} {
+    grid-template-columns: 305px;
+    justify-items: center;
+    row-gap: 40px;
+    margin-top: 40px;
+
+    /* В мобильной версии все элементы по центру */
+    > *:last-child:nth-child(odd) {
+      justify-self: center;
+    }
+  }
+
+  @media ${theme.media.mobile} {
+    row-gap: 0px;
+    margin-top: 0px;
+  }
 `;
 
 export const S = { MainDiv, FeaturedWorks, SmallWorks };

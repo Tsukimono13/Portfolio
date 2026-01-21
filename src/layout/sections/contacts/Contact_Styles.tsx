@@ -1,10 +1,9 @@
-import {theme} from "styles/Theme.styled";
+import { theme } from "styles/Theme.styled";
 import styled from "styled-components";
 
 const MainDiv = styled.div`
-  min-height: 60vh;
   background: ${theme.colors.secondary};
-`
+`;
 
 const WelcomeText = styled.p`
   font-size: 24px;
@@ -19,14 +18,13 @@ const WelcomeText = styled.p`
     line-height: 22px;
     width: 304px;
   }
-`
+`;
 
 const ButtonStyled = styled.button`
   background: rgba(242, 156, 239, 1);
   padding: 18px 64px 14px;
   border-radius: 16px;
   margin-top: 28px;
-  margin-bottom: 136px;
   cursor: pointer;
 
   font-size: 34px;
@@ -35,13 +33,12 @@ const ButtonStyled = styled.button`
   text-align: center;
   color: ${theme.colors.text};
 
-
   :hover {
-    background: #FCC419;
+    background: #fcc419;
   }
 
   :active {
-    background: #FCC419;
+    background: #fcc419;
   }
 
   @media ${theme.media.mobile} {
@@ -49,5 +46,5 @@ const ButtonStyled = styled.button`
     line-height: 28px;
     padding: 12px 77px;
   }
-`
-export const S = {MainDiv, WelcomeText, ButtonStyled}
+`;
+export const S = { MainDiv, WelcomeText, ButtonStyled };

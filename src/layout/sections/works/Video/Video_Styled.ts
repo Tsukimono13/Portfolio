@@ -4,15 +4,16 @@ import back from 'assets/image/mobileBack.png'
 
 const VideoBox = styled.div`
   position: absolute;
-  top: 41px;
-  left: 390px;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 
   @media ${theme.media.tablet} {
     position: relative;
     top: 0;
     left: 0;
+    transform: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,10 +21,17 @@ const VideoBox = styled.div`
     background-image: url("${back}");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border: 4px solid #F29CEF;
     border-radius: 12px;
     width: 305px;
-    min-height: 438px;
+    height: 152px;
+    overflow: hidden;
+
+    .react-player {
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 `
 export const S = {VideoBox}
