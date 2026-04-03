@@ -21,7 +21,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     border-radius: 4px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-      background: rgba(242, 156, 239, 0);
+      background: transparent;
     `}
     &::before {
       content: "";
@@ -57,20 +57,19 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `
 const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
   position: fixed;
-  background: rgba(242, 156, 239);
+  background: ${theme.colors.accent};
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 99999;
   display: flex;
-
   justify-content: center;
   align-items: flex-end;
   transform: translateY(-100%);
-  transition: 0.8s ease-in-out;
+  visibility: hidden;
+  transition: transform 0.8s ease-in-out, visibility 0.8s;
 
- 
   ul {
     display: flex;
     justify-content: center;
@@ -80,15 +79,15 @@ const MobilMenuPopup = styled.div<{ isOpen: boolean }>`
     margin-bottom: 105px;
     transition: 0.8s ease-in-out;
   }
-  
+
   ${props => props.isOpen && css<{ isOpen: boolean }>`
     transform: translateY(0);
+    visibility: visible;
 
     & ul {
       gap: 48px;
     }
   `}
-  
 `
 const MobileMenu = styled.nav`
     display: none;

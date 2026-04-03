@@ -21,17 +21,18 @@ export const Footer: React.FC = () => {
         <Wrapper justify={"center"} align={"center"} direction={"column"}>
           <S.IconContainer>
             {icons.map((i, index) => (
-              <a key={index} href={i.link} target="_blank">
-                <S.Icons src={i.icon} />
+              <a key={index} href={i.link} target="_blank" rel="noopener noreferrer" aria-label={i.link.includes('github') ? 'GitHub' : i.link.includes('t.me') ? 'Telegram' : 'Email'}>
+                <S.Icons src={i.icon} alt="" />
               </a>
             ))}
           </S.IconContainer>
-          <S.MyNameServe>© Irina Litvinova, 2023</S.MyNameServe>
+          <S.MyNameServe>© Irina Litvinova, 2026</S.MyNameServe>
           <S.DesignName>
             Design:{" "}
             <S.LinkDesignName
               href={"https://www.behance.net/psybolord-3000"}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Anton Kartenov
             </S.LinkDesignName>

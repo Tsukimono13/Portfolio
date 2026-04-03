@@ -8,6 +8,9 @@ const VideoBox = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  width: 196px;
+  height: 292px;
+  overflow: hidden;
 
   @media ${theme.media.tablet} {
     position: relative;
@@ -22,16 +25,17 @@ const VideoBox = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 4px solid #F29CEF;
+    border: 4px solid ${theme.colors.accent};
     border-radius: 12px;
     width: 305px;
     height: 152px;
-    overflow: hidden;
-
-    .react-player {
-      width: 100% !important;
-      height: 100% !important;
-    }
   }
 `
-export const S = {VideoBox}
+
+const VideoIframe = styled.iframe`
+  width: 100%;
+  height: 100%;
+  border: none;
+`
+
+export const S = {VideoBox, VideoIframe}

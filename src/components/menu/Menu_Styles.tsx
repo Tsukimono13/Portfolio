@@ -6,7 +6,7 @@ const NavLink = styled(Link)`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #2D2C2C;
+  color: ${theme.colors.textNav};
   text-decoration: none;
   padding-left: 28px;
   position: relative;
@@ -15,7 +15,7 @@ const NavLink = styled(Link)`
     content: "";
     position: absolute;
     height: 4px;
-    background-color: #F29CEF;
+    background-color: ${theme.colors.accent};
     width: 0;
     left: 68%;
     top: 20px;

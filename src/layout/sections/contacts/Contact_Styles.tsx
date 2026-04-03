@@ -12,16 +12,24 @@ const WelcomeText = styled.p`
   text-align: center;
   color: rgba(255, 255, 255, 1);
   width: 590px;
+  max-width: 100%;
+
+  @media ${theme.media.tablet} {
+    font-size: 20px;
+    line-height: 28px;
+    width: 100%;
+    max-width: 440px;
+  }
 
   @media ${theme.media.mobile} {
     font-size: 16px;
     line-height: 22px;
-    width: 304px;
+    max-width: 304px;
   }
 `;
 
 const ButtonStyled = styled.button`
-  background: rgba(242, 156, 239, 1);
+  background: ${theme.colors.accent};
   padding: 18px 64px 14px;
   border-radius: 16px;
   margin-top: 28px;
@@ -34,17 +42,23 @@ const ButtonStyled = styled.button`
   color: ${theme.colors.text};
 
   :hover {
-    background: #fcc419;
+    background: ${theme.colors.accentHover};
   }
 
   :active {
-    background: #fcc419;
+    background: ${theme.colors.accentHover};
+  }
+
+  @media ${theme.media.tablet} {
+    font-size: 26px;
+    line-height: 36px;
+    padding: 14px 48px 10px;
   }
 
   @media ${theme.media.mobile} {
     font-size: 20px;
     line-height: 28px;
-    padding: 12px 77px;
+    padding: 12px 48px;
   }
 `;
 export const S = { MainDiv, WelcomeText, ButtonStyled };

@@ -3,27 +3,17 @@ import { S } from "layout/sections/works/Works_Styled";
 import { theme } from "styles/Theme.styled";
 import { Container } from "components/Container";
 import { Title } from "components/title/Title";
-import { CartWorkDesktop } from "components/work/workCartDesktop/CartWorkDesktop";
-import { CartWorkMobile } from "components/work/workCartMobile/CartWorkMobile";
 import { works } from "layout/sections/works/Projects";
 import { TabMenu } from "../../../components/tabButtons/TabMenu";
-import { CartWorkSmallDesktop } from "components/work/workSmallDesktop/CartWorkSmallDesktop";
+import { WorkCard } from "components/work/WorkCard";
+import { useWindowWidth } from "hooks/useWindowWidth";
 
 export type ButtonType = "all" | "web" | "mobile";
 
 export const Works: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<ButtonType>("all");
-
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 820;
-  const isDesktop = width > breakpoint;
-
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  const width = useWindowWidth();
+  const isDesktop = width > theme.breakpoints.smallDesktop;
 
   const filteredWorks =
     selectedTab === "all"
@@ -39,26 +29,16 @@ export const Works: React.FC = () => {
         <Title title="Projects" color={theme.colors.text} />
         <TabMenu selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
 
-        {/* BIG / FEATURED */}
         <S.FeaturedWorks>
-          {largeWorks.map((work) =>
-            isDesktop ? (
-              <CartWorkDesktop key={work.title} work={work} />
-            ) : (
-              <CartWorkMobile key={work.title} work={work} />
-            )
-          )}
+          {largeWorks.map((work) => (
+            <WorkCard key={work.title} work={work} isDesktop={isDesktop} />
+          ))}
         </S.FeaturedWorks>
 
-        {/* SMALL / GRID */}
         <S.SmallWorks>
-          {smallWorks.map((work) =>
-            isDesktop ? (
-              <CartWorkSmallDesktop key={work.title} work={work} />
-            ) : (
-              <CartWorkMobile key={work.title} work={work} />
-            )
-          )}
+          {smallWorks.map((work) => (
+            <WorkCard key={work.title} work={work} isDesktop={isDesktop} />
+          ))}
         </S.SmallWorks>
       </Container>
     </S.MainDiv>

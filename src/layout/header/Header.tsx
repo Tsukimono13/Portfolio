@@ -5,24 +5,18 @@ import { Wrapper } from "components/FlexWrapper";
 import { MobileMenu } from "layout/header/headerMenu/mobileMenu/MobileMenu";
 import { S } from "layout/header/Header_Styles";
 import { DesktopMenu } from "layout/header/headerMenu/desktopMenu/DesktopMenu";
+import { useWindowWidth } from "hooks/useWindowWidth";
+import { theme } from "styles/Theme.styled";
 
 export const Header: React.FC = () => {
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 768;
-
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  const width = useWindowWidth();
 
   return (
     <S.StyledHeader>
       <Container>
         <Wrapper justify={"space-between"} align={"center"}>
           <Logo />
-          {width > breakpoint ? <DesktopMenu /> : <MobileMenu />}
+          {width > theme.breakpoints.tablet ? <DesktopMenu /> : <MobileMenu />}
         </Wrapper>
       </Container>
     </S.StyledHeader>

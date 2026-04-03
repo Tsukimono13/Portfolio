@@ -1,4 +1,3 @@
-import React from "react";
 import react from "assets/icons/stackIcons/react.svg";
 import redux from "assets/icons/stackIcons/redux.svg";
 import ts from "assets/icons/stackIcons/ts.svg";
@@ -31,7 +30,7 @@ const Stack = () => {
       <Fade cascade={true} damping={0.2}>
         {stackIcons.map((i, index) => (
           <div key={index}>
-            <S.StyledIcon src={i.icon} />
+            <S.StyledIcon src={i.icon} alt={i.title} />
             <S.StyledDescription>{i.title}</S.StyledDescription>
           </div>
         ))}

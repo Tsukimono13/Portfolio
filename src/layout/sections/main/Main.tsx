@@ -17,7 +17,7 @@ export const Main: React.FC = () => {
           wrap={"wrap-reverse"}
         >
           <div>
-            <S.NameImg src={name} />
+            <S.NameImg src={name} alt="Irina Litvinova" />
             <S.AboutMe>
               I'm a React developer from Russia, living in Moscow. I'm
               interested in programming and everything connected with it. Will
@@ -34,8 +34,8 @@ export const Main: React.FC = () => {
               transitionSpeed={2000}
               gyroscope={true}
             >
-              <S.MyPhoto src={photo} alt="Photo" />
-              <S.Shadow src={shadow} alt="Photo" />
+              <S.MyPhoto src={photo} alt="Irina Litvinova portrait" />
+              <S.Shadow src={shadow} alt="" />
             </Tilt>
           </div>
         </Wrapper>

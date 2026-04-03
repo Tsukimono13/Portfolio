@@ -4,6 +4,7 @@ import { Container } from "components/Container";
 import { Wrapper } from "components/FlexWrapper";
 import { S } from "layout/sections/stack/StackBlock_Styles";
 import { Title } from "components/title/Title";
+import { theme } from "styles/Theme.styled";
 
 export const StackBlock: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ export const StackBlock: React.FC = () => {
             <S.StackTextBlock>
               <Title
                 title={"Stack"}
-                color={"rgba(242, 156, 239, 1)"}
+                color={theme.colors.accent}
                 position={"left"}
               />
               <S.StackInfo>

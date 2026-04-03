@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
           <S.WelcomeText>
             Write me if you have questions, suggestions or just want to chat :)
           </S.WelcomeText>
-          <a href={"https://t.me/Tsukimono13"}>
+          <a href={"https://t.me/Tsukimono13"} target="_blank" rel="noopener noreferrer">
             <S.ButtonStyled>Send message</S.ButtonStyled>
           </a>
         </Wrapper>

@@ -12,6 +12,13 @@ const MenuContainer = styled.div`
   @media ${theme.media.tablet} {
     gap: 12px;
     margin-bottom: 48px;
+    margin-top: 36px;
+  }
+
+  @media ${theme.media.mobile} {
+    gap: 8px;
+    margin-bottom: 32px;
+    margin-top: 24px;
   }
 `
 
@@ -24,7 +31,7 @@ const MenuButton = styled.button`
   color: ${theme.colors.text};
 
   &.active {
-    background: #F29CEF;
+    background: ${theme.colors.accent};
     border-radius: 12px;
     transition: background-color 0.3s ease-in-out;
   }
@@ -33,6 +40,12 @@ const MenuButton = styled.button`
     font-size: 20px;
     line-height: 20px;
     padding: 12px 20px;
+  }
+
+  @media ${theme.media.mobile}{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 16px;
   }
 `
 export const S = {MenuButton, MenuContainer}

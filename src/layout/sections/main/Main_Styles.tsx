@@ -13,8 +13,14 @@ const AboutMe = styled.h1`
   font-weight: 400;
   line-height: 34px;
   margin-top: 40px;
-  color: #1F1C1F;
+  color: ${theme.colors.text};
   width: 488px;
+
+  @media ${theme.media.desktop} {
+    width: 400px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 
   @media ${theme.media.tablet} {
     font-size: 16px;
@@ -34,6 +40,11 @@ const MyPhoto = styled.img`
   z-index: 9999;
   margin-top: 50px;
   overflow-y: hidden;
+
+  @media ${theme.media.desktop} {
+    width: 420px;
+    height: 402px;
+  }
 
   @media ${theme.media.tablet} {
     width: 316px;
@@ -58,7 +69,7 @@ const Shadow = styled.img`
   width: 769px;
   height: 638px;
 
-  @media screen and (max-width: 1120px) {
+  @media ${theme.media.desktop} {
     display: none;
   }
 `
